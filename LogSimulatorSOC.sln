@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogSimulatorSOC", "LogSimulatorSOC\LogSimulatorSOC.csproj", "{F2CE84F6-4B35-458C-979E-0F58FC7B53EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogSimulatorSOC.Tests", "LogSimulatorSOC.Tests\LogSimulatorSOC.Tests.csproj", "{0EEDE040-4D93-4D4F-BE3D-40AE0B8A85F6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Éléments de solution", "Éléments de solution", "{808D12D2-CC88-42FD-B647-352E550D3425}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2CE84F6-4B35-458C-979E-0F58FC7B53EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2CE84F6-4B35-458C-979E-0F58FC7B53EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2CE84F6-4B35-458C-979E-0F58FC7B53EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2CE84F6-4B35-458C-979E-0F58FC7B53EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EEDE040-4D93-4D4F-BE3D-40AE0B8A85F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EEDE040-4D93-4D4F-BE3D-40AE0B8A85F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EEDE040-4D93-4D4F-BE3D-40AE0B8A85F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EEDE040-4D93-4D4F-BE3D-40AE0B8A85F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
