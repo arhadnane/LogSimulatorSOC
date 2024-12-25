@@ -1,66 +1,62 @@
 # LogSimulatorSOC
 
-LogSimulatorSOC est une application de simulation de génération de logs pour un Centre Opérationnel de Sécurité (SOC). Elle utilise Serilog pour générer et enregistrer différents types de logs de sécurité.
+LogSimulatorSOC is a log generation simulation application for a Security Operations Center (SOC). It uses Serilog to generate and record various types of security logs.
 
-## Prérequis
+## Prerequisites
 
 - .NET 9
 - Visual Studio 2022
 
 ## Installation
 
-1. Clonez le dépôt : git clone https://github.com/votre-utilisateur/LogSimulatorSOC.git
+1. Clone the repository: `git clone https://github.com/your-username/LogSimulatorSOC.git`
 
-2. Ouvrez la solution dans Visual Studio 2022.
+2. Open the solution in Visual Studio 2022.
 
-3. Assurez-vous que les packages NuGet suivants sont installés :
+3. Ensure the following NuGet packages are installed:
     - `Serilog`
     - `Serilog.Sinks.Console`
     - `Serilog.Sinks.File`
-    - `xUnit` (pour les tests unitaires)
+    - `xUnit` (for unit tests)
 
-    Vous pouvez installer ces packages via la console du gestionnaire de package NuGet :
-        - Install-Package Serilog
-        - Install-Package Serilog.Sinks.Console
-        - Install-Package Serilog.Sinks.File
-        - Install-Package xUnit
+    You can install these packages via the NuGet Package Manager Console:
+        - `Install-Package Serilog`
+        - `Install-Package Serilog.Sinks.Console`
+        - `Install-Package Serilog.Sinks.File`
+        - `Install-Package xUnit`
 
-## Utilisation
+## Usage
 
-1. Exécutez le projet `LogSimulatorSOC` pour démarrer la génération de logs : dotnet run --project LogSimulatorSOC
+1. Run the `LogSimulatorSOC` project to start log generation: `dotnet run --project LogSimulatorSOC`
 
-2. L'application commencera à générer des logs et les enregistrera dans la console et dans un fichier situé dans `logs/simulator.log`.
+2. The application will start generating logs and will record them in the console and in a file located at `logs/simulator.log`.
 
-3. Pour arrêter l'application, appuyez sur `Ctrl + C`.
+3. To stop the application, press `Ctrl + C`.
 
-## Structure du projet
+## Project Structure
 
-- `LogSimulatorSOC/LogSimulatorSOC.cs` : Contient la logique principale pour la génération de logs.
-- `LogSimulatorSOC.Tests/LogSimulatorSOCTest.cs` : Contient les tests unitaires pour les méthodes de génération de logs.
+- `LogSimulatorSOC/LogSimulatorSOC.cs`: Contains the main logic for log generation.
+- `LogSimulatorSOC.Tests/LogSimulatorSOCTest.cs`: Contains unit tests for the log generation methods.
 
 ## Tests
 
-Pour exécuter les tests unitaires, utilisez la commande suivante : `dotnet test`
+To run the unit tests, use the following command: `dotnet test`
 
-## Méthodes de génération de logs
+## Log Generation Methods
 
-L'application génère différents types de logs de sécurité :
+The application generates different types of security logs:
 
-- `GenerateNormalSystemLog` : Génère un log indiquant le démarrage réussi d'un processus système.
-- `GenerateNormalNetworkLog` : Génère un log indiquant l'établissement d'une connexion réseau.
-- `GenerateBruteForceAttemptLog` : Génère un log indiquant une tentative de connexion par force brute.
-- `GeneratePortScanLog` : Génère un log indiquant une détection de scan de ports.
-- `GenerateFraudulentSSHConnectionLog` : Génère un log indiquant une tentative de connexion SSH non autorisée.
+- `GenerateNormalSystemLog`: Generates a log indicating the successful start of a system process.
+- `GenerateNormalNetworkLog`: Generates a log indicating the establishment of a network connection.
+- `GenerateBruteForceAttemptLog`: Generates a log indicating a brute force login attempt.
+- `GeneratePortScanLog`: Generates a log indicating a port scan detection.
+- `GenerateFraudulentSSHConnectionLog`: Generates a log indicating an unauthorized SSH connection attempt.
 
-## Contribuer
+## Contributing
 
-Les contributions sont les bienvenues ! Veuillez soumettre une pull request ou ouvrir une issue pour discuter des changements que vous souhaitez apporter.
+Contributions are welcome! Please submit a pull request or open an issue to discuss the changes you wish to make.
 
-## Licence
+## License
 
-Ce projet est sous licence MIT: https://opensource.org/license/mit
+This project is licensed under the MIT License: https://opensource.org/license/mit
 
-
-    
-
-    
